@@ -1,8 +1,5 @@
 package baidu;
 
-/**
- * Created by Katsura on 2017/4/27.
- */
 public class Point {
     int x;
     int y;

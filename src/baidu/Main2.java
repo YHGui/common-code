@@ -2,9 +2,7 @@ package baidu;
 
 import java.util.Scanner;
 
-/**
- * Created by Katsura on 2017/4/27.
- */
+
 public class Main2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

@@ -7,9 +7,6 @@ import java.util.Scanner;
 import static java.lang.Math.pow;
 import static java.lang.Math.sqrt;
 
-/**
- * Created by Katsura on 2017/4/27.
- */
 public class Main1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
