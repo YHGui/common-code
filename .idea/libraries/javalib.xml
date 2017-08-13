@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="javalib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/javalib/stdlib-package.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/javalib/algs4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/javalib/slf4j-simple-1.7.25-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/javalib/hamcrest-core-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/javalib/stdlib.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/javalib/junit-4.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/javalib/xchart-3.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/javalib/crawler4j-4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/javalib/SeamRemover.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/javalib/jh61b.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/javalib/slf4j-simple-1.7.25.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
