@@ -9,6 +9,8 @@ IntelliJ IDEA上，顺带整理一下知识点。
 - 本地方法栈：虚拟机使用到的Native方法
 - 堆：存放对象实例，线程共享。Java堆中可能划分多个线程私有的分配缓冲区，无论如何划分，与存放内容无关，无论哪个区域，存储的都仍然是对象实例，进一步划分是为了更好的回收内存。
 - 方法区：线程共享，用于存储已被虚拟机加载的类信息量，常量，静态变量，即时编译后的代码等数据。运行时常量池也是方法区的一部分，并且Java虚拟机规范并没有对常量池有要求，运行期间也可以讲新的常量放入池中。
+- 对象内存布局见下图：
+![Alt text](https://github.com/YHGui/common-code/blob/a6592ca294b8e9c4a4faab497988aa7cd26aefdc/src/com/katsura/jvm/images/Java-array-object.png)
     1. JDK7永久代
     2. JDK8 metaspace
 - OutOfMemory异常
@@ -24,7 +26,8 @@ IntelliJ IDEA上，顺带整理一下知识点。
   1. 堆中的对象(新生代)->引用计数法和可达性分析算法
   2. 方法区(永久代)废弃常量和无用的类
      1. 废弃常量：没有其他对象引用
-     2. 无用类：实例都被回收 + ClassLoader已经被回收 + 无法在任何地方通过反射访问该类的方法 
+     2. 无用类：实例都被回收 + ClassLoader已经被回收 + 无法在任何地方通过反射访问该
+     类的方法 
 2. 什么时候回收？
    1. Minor GC：新生代GC，一般来说，对象直接在新生代的Eden space，若空间不足则Minor GC；
    2. Full GC：老年代GC，速度慢Minor GC十倍以上；
