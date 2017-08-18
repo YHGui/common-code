@@ -1,7 +1,0 @@
-static:在编译(compile time)时候起作用；若为static方法，编译器确切知道在编译时候被调用。为什么呢？因为它是不能够被覆盖(override)的
-runtime errors(null pointer exception, indexOutOfBounds, Casting exception, overflows)
-动态方法的选择只有当有override时发生
-调用方法由静态类型决定
-
-实现一个关系型数据库管理系统(DBMS)
-首先设计：简要列出设计提纲，利与弊等
