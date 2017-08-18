@@ -11,6 +11,7 @@ IntelliJ IDEA上，顺带整理一下知识点。
 - 方法区：线程共享，用于存储已被虚拟机加载的类信息量，常量，静态变量，即时编译后的代码等数据。运行时常量池也是方法区的一部分，并且Java虚拟机规范并没有对常量池有要求，运行期间也可以讲新的常量放入池中。
 - 对象内存布局见下图：
 ![Alt text](https://github.com/YHGui/common-code/blob/a6592ca294b8e9c4a4faab497988aa7cd26aefdc/src/com/katsura/jvm/images/Java-array-object.png)
+- 方法区
     1. JDK7永久代
     2. JDK8 metaspace
 - OutOfMemory异常
