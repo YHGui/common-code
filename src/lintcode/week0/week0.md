@@ -1,4 +1,4 @@
-#Coding Style
+# Coding Style
 >最容易出卖你的，就是你的coding style，工程师的代码长什么样比脸长什么样重要。
 
 面试官眼中的求职者：
@@ -12,7 +12,7 @@
 - coding 习惯，bug free，是否进行异常检测，边界处理
 - 沟通交流
 - 测试：主动给出test case，cover掉所有情况
-###subset模板
+### subset模板
 ```java
 public class SubsetsSolution{
     public static ArrayList<ArrayList<Integer>> subsets(int[] nums) {

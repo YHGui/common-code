@@ -15,24 +15,24 @@ public class Main {
         Thread onlineThread = new Thread(onlineRequest);
         ReportProcessor processor = new ReportProcessor(service);
         Thread senderThread = new Thread(processor);
-        System.out.printf("Main: Starting the threads");
+        System.out.printf("Solution: Starting the threads");
         faceThread.start();
         onlineThread.start();
         senderThread.start();
         try {
-            System.out.printf("Main: Waiting for the report generators.\n");
+            System.out.printf("Solution: Waiting for the report generators.\n");
             faceThread.join();
             onlineThread.join();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.printf("Main: Shutting down the executor.\n");
+        System.out.printf("Solution: Shutting down the executor.\n");
         try {
             executor.awaitTermination(1, TimeUnit.SECONDS);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
         processor.setEnd(true);
-        System.out.println("Main: Ends");
+        System.out.println("Solution: Ends");
     }
 }

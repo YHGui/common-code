@@ -19,7 +19,7 @@ public class Main {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.printf("Main: Configuration has been load : %s\n", new Date());
+        System.out.printf("Solution: Configuration has been load : %s\n", new Date());
 
     }
 }

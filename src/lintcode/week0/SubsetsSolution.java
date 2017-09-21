@@ -34,9 +34,9 @@ public class SubsetsSolution {
     //1.递归定义（接受什么参数，返回什么值，做了什么事）
     //找到所有已subset开头的子集都丢到results里
     private static void  helper(ArrayList<ArrayList<Integer>> results,
-                        ArrayList<Integer> subset,
-                        int[] nums,
-                        int startIndex) {
+                                ArrayList<Integer> subset,
+                                int[] nums,
+                                int startIndex) {
     //2.递归的拆解, deep copy，若只是results.add(subset)只是复制了旧的引用
         results.add(new ArrayList<>(subset));
         for (int i = startIndex; i < nums.length; i++) {

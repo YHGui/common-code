@@ -19,9 +19,9 @@ public class Main {
             e.printStackTrace();
         }
         if (task.isCompletedAbnormally()) {
-            System.out.printf("Main: An exception has ocurred\n");
-            System.out.printf("Main: %s\n", task.getException());
+            System.out.printf("Solution: An exception has ocurred\n");
+            System.out.printf("Solution: %s\n", task.getException());
         }
-        System.out.printf("Main: Result: %d", task.join());
+        System.out.printf("Solution: Result: %d", task.join());
     }
 }

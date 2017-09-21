@@ -15,7 +15,7 @@ public class Main {
             threads[i] = new Thread(task);
             threads[i].start();
         }
-        System.out.printf("Main: %d AddTask threads have been launched\n", threads.length);
+        System.out.printf("Solution: %d AddTask threads have been launched\n", threads.length);
         for (int i = 0; i < threads.length; i++) {
             try {
                 threads[i].join();
@@ -23,13 +23,13 @@ public class Main {
                 e.printStackTrace();
             }
         }
-        System.out.printf("Main: Size of the list: %d\n", list.size());
+        System.out.printf("Solution: Size of the list: %d\n", list.size());
         for (int i = 0; i < threads.length; i++) {
             PollTask task = new PollTask(list);
             threads[i] = new Thread(task);
             threads[i].start();
         }
-        System.out.printf("Main: %d PollTask threads have been launched\n", threads.length);
+        System.out.printf("Solution: %d PollTask threads have been launched\n", threads.length);
         for (int i = 0; i < threads.length; i++) {
             try {
                 threads[i].join();
@@ -37,6 +37,6 @@ public class Main {
                 e.printStackTrace();
             }
         }
-        System.out.printf("Main: Size of the list: %d\n", list.size());
+        System.out.printf("Solution: Size of the list: %d\n", list.size());
     }
 }

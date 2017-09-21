@@ -32,6 +32,6 @@ public class Main {
                 System.out.println("Vector[" + i +"] : " + vector.get(i));
             }
         }
-        System.out.println("Main: End of the example");
+        System.out.println("Solution: End of the example");
     }
 }

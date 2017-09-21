@@ -15,9 +15,9 @@ public class Main {
         ForkJoinPool pool = new ForkJoinPool();
         pool.execute(task);
         do {
-            System.out.printf("Main: Thread Count: %d\n", pool.getActiveThreadCount());
-            System.out.printf("Main: Thread Steal: %d\n", pool.getStealCount());
-            System.out.printf("Main: Parallelism: %d\n", pool.getParallelism());
+            System.out.printf("Solution: Thread Count: %d\n", pool.getActiveThreadCount());
+            System.out.printf("Solution: Thread Steal: %d\n", pool.getStealCount());
+            System.out.printf("Solution: Parallelism: %d\n", pool.getParallelism());
             try {
                 TimeUnit.MILLISECONDS.sleep(5);
             } catch (InterruptedException e) {
@@ -26,7 +26,7 @@ public class Main {
         } while (!task.isDone());
         pool.shutdown();
         if (task.isCompletedNormally()) {
-            System.out.printf("Main: The process has completed normally.\n");
+            System.out.printf("Solution: The process has completed normally.\n");
         }
         for (int i = 0; i < products.size(); i++) {
             Product product = products.get(i);
@@ -34,6 +34,6 @@ public class Main {
                 System.out.printf("Product %s: %f\n", product.getName(), product.getPrice());
             }
         }
-        System.out.printf("Main: End of the program.\n");
+        System.out.printf("Solution: End of the program.\n");
     }
 }

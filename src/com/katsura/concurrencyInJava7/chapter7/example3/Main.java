@@ -14,8 +14,8 @@ public class Main {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.printf("Main: Thread information.\n");
+        System.out.printf("Solution: Thread information.\n");
         System.out.printf("%s\n", thread);
-        System.out.printf("Main: End of the example.\n");
+        System.out.printf("Solution: End of the example.\n");
     }
 }

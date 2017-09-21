@@ -25,12 +25,12 @@ public class Main {
             e.printStackTrace();
         }
         try {
-            System.out.printf("Main: Result: %d\n", task.get());
+            System.out.printf("Solution: Result: %d\n", task.get());
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {
             e.printStackTrace();
         }
-        System.out.printf("Main: End of the program.\n");
+        System.out.printf("Solution: End of the program.\n");
     }
 }

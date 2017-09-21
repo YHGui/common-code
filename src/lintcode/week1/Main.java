@@ -1,8 +1,5 @@
 package lintcode.week1;
 
-/**
- * Created by Katsura on 2017/4/27.
- */
 public class Main {
     public int totalOccurrence(int[] A, int target) {
         // Write your code here

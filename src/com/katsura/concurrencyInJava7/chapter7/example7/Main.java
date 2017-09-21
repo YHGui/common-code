@@ -12,6 +12,6 @@ public class Main {
         Task task = new Task("Task", array, 0, array.length);
         pool.invoke(task);
         pool.shutdown();
-        System.out.printf("Main: End of the program.\n");
+        System.out.printf("Solution: End of the program.\n");
     }
 }

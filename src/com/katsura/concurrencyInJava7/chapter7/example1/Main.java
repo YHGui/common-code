@@ -23,7 +23,7 @@ public class Main {
         for (int i = 0; i < 5; i++) {
             try {
                 String result = results.get(i).get();
-                System.out.printf("Main: Result for Task %d : %s\n", i, result);
+                System.out.printf("Solution: Result for Task %d : %s\n", i, result);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } catch (ExecutionException e) {
@@ -34,7 +34,7 @@ public class Main {
         for (int i = 5; i < 10; i++) {
             try {
                 String result = results.get(i).get();
-                System.out.printf("Main: Result for Task %d : %s\n", i, result);
+                System.out.printf("Solution: Result for Task %d : %s\n", i, result);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } catch (ExecutionException e) {
@@ -46,6 +46,6 @@ public class Main {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.printf("Main: End of the program");
+        System.out.printf("Solution: End of the program");
     }
 }

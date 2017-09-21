@@ -16,7 +16,7 @@ public class Main {
             threads[i].start();
         }
         for (int i = 0; i < 15; i++) {
-            System.out.printf("Main: Logging the Lock.\n");
+            System.out.printf("Solution: Logging the Lock.\n");
             System.out.printf("*************************\n");
             System.out.printf("Lock: Owner : %s\n", lock.getOwnerName());
             System.out.printf("Lock: Queued Threads: %s\n", lock.hasQueuedThreads());

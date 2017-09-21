@@ -43,6 +43,7 @@ public class PermuteWithDupSolution {
         }
 
         for(int i = 0; i < nums.length; i++){
+            //如果和前一个数相同，必须前面那个数用过才行
             if (visited[i] == 1 || (i != 0 && nums[i] == nums[i - 1]
                     && visited[i - 1] == 0)){
                 continue;

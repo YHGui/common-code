@@ -20,6 +20,6 @@ public class Main {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.printf("Main: The program has finished\n");
+        System.out.printf("Solution: The program has finished\n");
     }
 }

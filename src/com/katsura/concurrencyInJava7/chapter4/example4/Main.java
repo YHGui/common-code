@@ -24,13 +24,13 @@ public class Main {
         String result;
         try {
             result = executor.invokeAny(taskList);
-            System.out.printf("Main: Result: %s\n", result);
+            System.out.printf("Solution: Result: %s\n", result);
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {
             e.printStackTrace();
         }
         executor.shutdown();;
-        System.out.printf("Main: End of the Execution\n");
+        System.out.printf("Solution: End of the Execution\n");
     }
 }

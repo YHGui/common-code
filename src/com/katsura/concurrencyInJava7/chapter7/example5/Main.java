@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
         MyScheduledThreadPoolExecutor executor = new MyScheduledThreadPoolExecutor(2);
         Task task = new Task();
-        System.out.printf("Main: %s\n", new Date());
+        System.out.printf("Solution: %s\n", new Date());
         executor.schedule(task, 1, TimeUnit.SECONDS);
         try {
             TimeUnit.SECONDS.sleep(3);
@@ -18,7 +18,7 @@ public class Main {
             e.printStackTrace();
         }
         task = new Task();
-        System.out.printf("Main: %s\n", new Date());
+        System.out.printf("Solution: %s\n", new Date());
         executor.scheduleAtFixedRate(task, 1, 3, TimeUnit.SECONDS);
         try {
             TimeUnit.SECONDS.sleep(10);
@@ -31,6 +31,6 @@ public class Main {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.printf("Main: End of the program.\n");
+        System.out.printf("Solution: End of the program.\n");
     }
 }

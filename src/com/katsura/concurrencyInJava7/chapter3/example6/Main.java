@@ -23,6 +23,6 @@ public class Main {
                 e.printStackTrace();
             }
         }
-        System.out.printf("Main: The phaser has finished: %s.\n", myPhaser.isTerminated());
+        System.out.printf("Solution: The phaser has finished: %s.\n", myPhaser.isTerminated());
     }
 }

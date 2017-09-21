@@ -19,6 +19,6 @@ public class Main {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.printf("Main: End of the program.\n");
+        System.out.printf("Solution: End of the program.\n");
     }
 }

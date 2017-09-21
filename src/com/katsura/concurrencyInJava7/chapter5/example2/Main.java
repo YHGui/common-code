@@ -16,10 +16,10 @@ public class Main {
         pool.execute(task);
         do {
             System.out.printf("*************************************\n");
-            System.out.printf("Main: Parallelisms: %d\n", pool.getParallelism());
-            System.out.printf("Main: Active Threads: %d\n", pool.getActiveThreadCount());
-            System.out.printf("Main: Task Count: %d\n", pool.getQueuedTaskCount());
-            System.out.printf("Main: Steal Count: %d\n", pool.getStealCount());
+            System.out.printf("Solution: Parallelisms: %d\n", pool.getParallelism());
+            System.out.printf("Solution: Active Threads: %d\n", pool.getActiveThreadCount());
+            System.out.printf("Solution: Task Count: %d\n", pool.getQueuedTaskCount());
+            System.out.printf("Solution: Steal Count: %d\n", pool.getStealCount());
             System.out.printf("**************************************\n");
             try {
                 TimeUnit.SECONDS.sleep(1);
@@ -34,7 +34,7 @@ public class Main {
             e.printStackTrace();
         }
         try {
-            System.out.printf("Main: The word appears %d in the document", task.get());
+            System.out.printf("Solution: The word appears %d in the document", task.get());
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {

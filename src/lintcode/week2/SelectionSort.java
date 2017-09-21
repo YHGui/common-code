@@ -2,9 +2,6 @@ package lintcode.week2;
 
 import java.util.Arrays;
 
-/**
- * Created by Katsura on 2017/3/20.
- */
 public class SelectionSort {
     public static void selectSort(int[] nums) {
 

@@ -23,12 +23,12 @@ public class Main {
                 e.printStackTrace();
             }
         }
-        System.out.printf("Main: Queue Size: %d\n", queue.size());
+        System.out.printf("Solution: Queue Size: %d\n", queue.size());
         for (int i = 0; i < taskThreads.length * 1000; i++) {
             Event event = queue.poll();
             System.out.printf("Thread %s: Priority %d\n", event.getThread(), event.getPriority());
         }
-        System.out.printf("Main: Queue Size: %d\n", queue.size());
-        System.out.printf("Main: End of the program\n");
+        System.out.printf("Solution: Queue Size: %d\n", queue.size());
+        System.out.printf("Solution: End of the program\n");
     }
 }

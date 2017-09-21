@@ -1,8 +1,6 @@
 package lintcode.week2;
 
-/**
- * Created by Katsura on 2017/3/6.
- */
+
 public class LCASolution {
     public class TreeNode {
         public int val;

@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
         ScheduledThreadPoolExecutor executor = (ScheduledThreadPoolExecutor) Executors.
                                                 newScheduledThreadPool(1);
-        System.out.printf("Main: Starting at: %s\n", new Date());
+        System.out.printf("Solution: Starting at: %s\n", new Date());
         for (int i = 0; i < 5; i++) {
             Task task = new Task("Task " + i);
             executor.schedule(task, i + 1, TimeUnit.SECONDS);
@@ -23,6 +23,6 @@ public class Main {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.printf("Main: Ends at: %s\n", new Date());
+        System.out.printf("Solution: Ends at: %s\n", new Date());
     }
 }

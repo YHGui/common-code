@@ -17,7 +17,7 @@ public class Main {
         Consumer consumer = new Consumer(buffer);
         Thread consumerThread = new Thread(consumer);
         consumerThread.start();
-        System.out.printf("Main: Buffer: Consumer count: %d\n", buffer.getWaitingConsumerCount());
+        System.out.printf("Solution: Buffer: Consumer count: %d\n", buffer.getWaitingConsumerCount());
         Event myEvent = new Event("Core Event", 0);
         try {
             buffer.transfer(myEvent);
@@ -36,7 +36,7 @@ public class Main {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.printf("Main: Buffer: Consumer count: %d\n", buffer.getWaitingConsumerCount());
+        System.out.printf("Solution: Buffer: Consumer count: %d\n", buffer.getWaitingConsumerCount());
         myEvent = new Event("Core Event 2", 0);
         try {
             buffer.transfer(myEvent);
@@ -48,6 +48,6 @@ public class Main {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.printf("Main: End of the program");
+        System.out.printf("Solution: End of the program");
     }
 }

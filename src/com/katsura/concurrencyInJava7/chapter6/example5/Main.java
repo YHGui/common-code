@@ -26,16 +26,16 @@ public class Main {
                 e.printStackTrace();
             }
         }
-        System.out.printf("Main: Size of the map: %d\n", map.size());
+        System.out.printf("Solution: Size of the map: %d\n", map.size());
         Map.Entry<String, Contact> element;
         Contact contact;
         element = map.firstEntry();
         contact = element.getValue();
-        System.out.printf("Main: First Entry: %s : %s\n", contact.getName(), contact.getPhone());
+        System.out.printf("Solution: First Entry: %s : %s\n", contact.getName(), contact.getPhone());
         element = map.lastEntry();
         contact = element.getValue();
-        System.out.printf("Main: First Entry: %s : %s\n", contact.getName(), contact.getPhone());
-        System.out.printf("Main: SubMap from A1996 to B1002: \n");
+        System.out.printf("Solution: First Entry: %s : %s\n", contact.getName(), contact.getPhone());
+        System.out.printf("Solution: SubMap from A1996 to B1002: \n");
         ConcurrentNavigableMap<String, Contact> submap = map.subMap("A1996", "B1002");
         do {
             element = submap.pollFirstEntry();

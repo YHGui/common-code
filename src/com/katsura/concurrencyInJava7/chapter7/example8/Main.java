@@ -22,8 +22,8 @@ public class Main {
                 value = false;
             }
         } while (!value);
-        System.out.printf("Main: Got the lock\n");
+        System.out.printf("Solution: Got the lock\n");
         lock.unlock();
-        System.out.printf("Main: End of the program.\n");
+        System.out.printf("Solution: End of the program.\n");
     }
 }

@@ -2,9 +2,6 @@ package NetEase;
 
 import java.util.Scanner;
 
-/**
- * Created by guiyonghui on 2017/8/12.
- */
 public class Main5 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

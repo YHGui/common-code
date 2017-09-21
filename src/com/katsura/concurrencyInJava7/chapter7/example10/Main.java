@@ -18,7 +18,7 @@ public class Main {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.printf("Main： Number of cars: %d\n", counter.get());
-        System.out.printf("Main: End of the program.\n");
+        System.out.printf("Solution： Number of cars: %d\n", counter.get());
+        System.out.printf("Solution: End of the program.\n");
     }
 }

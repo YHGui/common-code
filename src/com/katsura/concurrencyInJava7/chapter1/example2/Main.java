@@ -24,7 +24,7 @@ public class Main {
             PrintWriter pw = new PrintWriter(file)) {
             for (int i = 0; i < threads.length; i++) {
                 Thread thread = threads[i];
-                pw.println("Main: Status of Thread " + i +
+                pw.println("Solution: Status of Thread " + i +
                             " : " +threads[i].getState());
             }
             for (int i = 0; i < threads.length; i++) {
@@ -51,15 +51,15 @@ public class Main {
     }
 
     private static void writeThreadInfo(PrintWriter pw, Thread thread, Thread.State state) {
-        pw.printf("Main : Id %d - %s", thread.getId(), thread.getName());
+        pw.printf("Solution : Id %d - %s", thread.getId(), thread.getName());
         pw.println();
-        pw.printf("Main : Priority : %d", thread.getPriority());
+        pw.printf("Solution : Priority : %d", thread.getPriority());
         pw.println();
-        pw.printf("Main : Old State : %s", state);
+        pw.printf("Solution : Old State : %s", state);
         pw.println();
-        pw.printf("Main : New State : %s", thread.getState());
+        pw.printf("Solution : New State : %s", thread.getState());
         pw.println();
-        pw.printf("Main : **************************");
+        pw.printf("Solution : **************************");
         pw.println();
     }
 }
