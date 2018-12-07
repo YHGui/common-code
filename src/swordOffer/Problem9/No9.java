@@ -2,7 +2,7 @@ package swordOffer.Problem9;
 
 public class No9 {
     public static void main(String[] args) {
-        System.out.println(fibRecur(5));
+        System.out.println(fib(5));
     }
 
     private static long fibRecur(int n) {
