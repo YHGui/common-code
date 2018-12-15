@@ -20,7 +20,7 @@ public class No17 {
         h.next = b;
 
 
-        ListNode finalNode = mergeTwoLists(a, e);
+        ListNode finalNode = mergeTwoLists2(a, e);
         while (finalNode != null) {
             System.out.println(finalNode.val);
             finalNode = finalNode.next;
@@ -54,5 +54,24 @@ public class No17 {
         }
 
         return dummy.next;
+    }
+
+    private static ListNode mergeTwoLists2(ListNode left, ListNode right) {
+        if (null == left) {
+            return right;
+        } else if (null == right) {
+            return left;
+        }
+
+        ListNode newHead = null;
+        if (left.val < right.val) {
+            newHead = left;
+            newHead.next = mergeTwoLists2(left.next, right);
+        } else {
+            newHead = right;
+            newHead.next = mergeTwoLists2(left, right.next);
+        }
+
+        return newHead;
     }
 }
